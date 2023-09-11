@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body> 
+    
+    <div class="l"> 
+    <h1>- DASHBOARD -</h1>
+     <div class="dashboard">
+        <div class="widget">
+            <h2>ADD DATA - </h2>
+            <br>
+            <input type="text" id="dataInput" placeholder="Enter data">
+            <br>
+            <br>
+            <input type="file" id="imageInput" accept="image/*">
+            <br>
+            <button onclick="addData()" style="font-size: 22px;">&nbsp;Add&nbsp;</button>
+            <br>
+            <br>
+        </div>
+        <div class="widget">
+            <h2>THE STORED DATA - </h2>
+            <br>
+            <ul id="dataList"></ul>
+            <div class="delete-button-wrapper">
+            <button id="deleteImageButton" onclick="deleteImage()" style="font-size: 22px; display: none;">Delete Image</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="particles" id="particles"></div>
+
+    <script src="dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+     integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+</body>
+</html>
